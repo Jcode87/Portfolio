@@ -281,9 +281,6 @@ footer a:hover {
 }
 
 .dark-mode {
-  background-image: url("https://assets.pinterest.com/ext/embed.html?id=111041947051034807" height="1300" width="600");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  backrgound-color:darkgrey;
   transition-duration: .3s;
 }
