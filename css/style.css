@@ -1,0 +1,289 @@
+/* Universal styles */
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+h3{
+  font-family: 'Bangers',cursive;
+}
+
+/* header section starts here */
+header {
+  height: 100px;
+  margin-bottom: 150px;
+}
+
+#toggle {
+  float: right;
+  margin: 2px;
+  background-color: #8DE4AF;
+  border: none;
+}
+
+.nav-wrapper {
+  overflow: hidden;
+  background-color: #8DE4AF;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  padding: 14px 16px;
+  color:#FFF;
+  font-size: 1rem;
+  text-align: center;
+}
+
+header nav a:hover {
+  color:#083D6F;
+  background-color:#EDF5E0;
+}
+
+/* header section ends here */
+/* main starts here */
+#wrapper {
+  display: none;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color:#8DE4AF;
+  color:#083D6F;
+  box-shadow: 5px 5px 15px 5px black;
+}
+
+/* main ends here */
+/* secton 1 starts here */
+.fa-envelope {
+  font-size: 24px;
+}
+
+.fa-phone {
+  font-size: 24px;
+}
+
+.fa-map-marker {
+  font-size: 24px;
+}
+
+.container-section1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow: 5px 5px 15px 5px black;
+  border: 1px solid black;
+}
+
+.flex-item1 h1 {
+  font-size: 3rem;
+  font-family: 'Bangers',cursive;
+}
+
+.flex-item1 h2 {
+  font-weight: normal;
+  font-family: 'Bangers',cursive;
+}
+
+.flex-item2 img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid darkgrey;
+  box-shadow: 5px 5px 5px 5px black;
+}
+
+.flex-item1 span {
+  padding: 15px;
+}
+
+.flex-item1 p {
+  color: #083D6F;
+}
+
+.flex-item1 {
+  margin: 10px;
+}
+
+.flex-item2 {
+  margin: 10px;
+}
+
+/* section 1 ends here */
+/* need to organise */
+#demo {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: #8DE4AF;
+  box-shadow: 5px darkgrey;
+}
+
+#demo:hover {
+  color:#083D6F;
+  background-color:#EDF5E0;
+}
+
+#demo:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button {
+  text-align: center;
+  margin: 25px;
+}
+
+/* need to organise */
+/* section 2 starts here */
+.container-section2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9 {
+  width: 50px;
+  height: 50px;
+  margin-right: 50px;
+}
+
+.flex-item3 {
+  margin: 10px;
+  line-height: 2;
+  text-align: justify;
+}
+
+.flex-item4 {
+  margin: 10px;
+}
+
+/* section 2 ends here */
+/* section 3 starts here */
+.container-section3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex-item5 {
+  margin: 10px;
+}
+
+summary {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+summary::before {
+  content: "\00BB";
+}
+
+#visited {
+  text-align: center;
+}
+
+/* section 3 ends here */
+footer {
+  text-align: center;
+  padding: 2.5em;
+}
+
+footer span {
+  padding: 1.5em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #8DE4AF;
+}
+
+footer a:hover {
+  border-bottom: none;
+  color: blue;
+}
+
+@media only screen and (max-width:768px) and (min-width: 400px) {
+  nav a {
+    display: block;
+    float: left;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: #FFF;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  header {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+
+  header nav a:hover {
+    color:#083D6F;
+    background-color:#EDF5E0;
+  }
+
+  #wrapper {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color:#8DE4AF;
+    color:#083D6F;
+    box-shadow: 5px 5px 15px 5px black;
+    font-size: 0.50rem;
+  }
+
+  #demo {
+    padding: 15px 25px;
+    font-size: 0.50rem;
+  }
+
+  .flex-item1 h1 {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .flex-item1 h2 {
+    display: block;
+    font-weight: normal;
+  }
+
+  .flex-item2 img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid lightgrey;
+    box-shadow: 2px 2px 2px 2px black;
+  }
+}
+
+.dark-mode {
+  background-image: url("/Users/sarahjones/Documents/Portfolio/resources/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition-duration: .3s;
+}
